@@ -5,9 +5,7 @@
 
 trigger:
 - master
-pool:
-  name: 'default'
-  demands: 'ROBERT2'
+pool: 'default'
 
 
 
