@@ -7,7 +7,7 @@ trigger:
 - master
 pool:
   name: 'default'
-  vmImage: 'ROBERT2'
+  demands: 'ROBERT2'
 
 
 
