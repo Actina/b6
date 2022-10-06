@@ -6,7 +6,9 @@
 trigger:
 - master
 pool:
-  name: default
+  name: Default
+  demands:
+   - agent.name -equals ROBERT2
 
 
 
