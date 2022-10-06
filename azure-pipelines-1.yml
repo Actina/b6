@@ -8,7 +8,7 @@ trigger:
 
 pool:
   name: 'default'
-  vmImage: 'ROBERT2'
+  vmImage: 
 
 steps:
 - task: Maven@3
