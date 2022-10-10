@@ -7,6 +7,13 @@ trigger:
 - master
 
 pool:
+  name: Azure Pipelines
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    appType: 'webApp'
+    WebAppName: 
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
   vmImage: 'ROBERT2' #Testing with self-hosted agent
 
 steps:
